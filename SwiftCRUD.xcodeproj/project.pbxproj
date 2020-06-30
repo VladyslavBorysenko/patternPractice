@@ -19,6 +19,9 @@
 		865A948A23B76740008E2F8C /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865A948423B7673F008E2F8C /* SQLiteDB.swift */; };
 		86BB581223C26BAD00E1FF6A /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 86BB581123C26BAD00E1FF6A /* data.db */; };
 		86BB581423C26D7900E1FF6A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BB581323C26D7900E1FF6A /* CustomTableViewCell.swift */; };
+		86C3B2E524ABA3E600DE07E8 /* IParcelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C3B2E424ABA3E600DE07E8 /* IParcelBuilder.swift */; };
+		86C3B2E724ABA43200DE07E8 /* IParcelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C3B2E624ABA43200DE07E8 /* IParcelModel.swift */; };
+		86C3B2E924ABA77C00DE07E8 /* ParcelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C3B2E824ABA77C00DE07E8 /* ParcelBuilder.swift */; };
 		86C7C74A2448EC9100D87CDD /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 86C7C7492448EC9100D87CDD /* OpenCVWrapper.mm */; };
 		86C7EA8C23B75E3700EFC512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C7EA8B23B75E3700EFC512 /* AppDelegate.swift */; };
 		86C7EA8E23B75E3700EFC512 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C7EA8D23B75E3700EFC512 /* SceneDelegate.swift */; };
@@ -45,6 +48,9 @@
 		865A948523B7673F008E2F8C /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		86BB581123C26BAD00E1FF6A /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
 		86BB581323C26D7900E1FF6A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		86C3B2E424ABA3E600DE07E8 /* IParcelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IParcelBuilder.swift; sourceTree = "<group>"; };
+		86C3B2E624ABA43200DE07E8 /* IParcelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IParcelModel.swift; sourceTree = "<group>"; };
+		86C3B2E824ABA77C00DE07E8 /* ParcelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelBuilder.swift; sourceTree = "<group>"; };
 		86C7C7472448EC8000D87CDD /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
 		86C7C7482448EC9100D87CDD /* SwiftCRUD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftCRUD-Bridging-Header.h"; sourceTree = "<group>"; };
 		86C7C7492448EC9100D87CDD /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 			children = (
 				8659206B243E7DE300AC0B1B /* ParcelModel.swift */,
 				8659206D243F0C9B00AC0B1B /* Recipient.swift */,
+				86C3B2E624ABA43200DE07E8 /* IParcelModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -135,6 +142,8 @@
 				86057DD423C241A600E0B55C /* IDatabaseRepository.swift */,
 				86057DD623C243D900E0B55C /* SQLiteDatabaseRepository.swift */,
 				8622173324A76BDC00D1DF8F /* FactoryDatabaseAccess.swift */,
+				86C3B2E424ABA3E600DE07E8 /* IParcelBuilder.swift */,
+				86C3B2E824ABA77C00DE07E8 /* ParcelBuilder.swift */,
 			);
 			path = DatabaseRepository;
 			sourceTree = "<group>";
@@ -289,6 +298,7 @@
 				86C7EA9023B75E3700EFC512 /* ViewController.swift in Sources */,
 				86BB581423C26D7900E1FF6A /* CustomTableViewCell.swift in Sources */,
 				865A948723B76740008E2F8C /* SQLTable.swift in Sources */,
+				86C3B2E924ABA77C00DE07E8 /* ParcelBuilder.swift in Sources */,
 				86C7C74A2448EC9100D87CDD /* OpenCVWrapper.mm in Sources */,
 				86C7EA8C23B75E3700EFC512 /* AppDelegate.swift in Sources */,
 				865A948823B76740008E2F8C /* CloudDB.swift in Sources */,
@@ -298,8 +308,10 @@
 				8659206C243E7DE300AC0B1B /* ParcelModel.swift in Sources */,
 				86C7EA8E23B75E3700EFC512 /* SceneDelegate.swift in Sources */,
 				865A948A23B76740008E2F8C /* SQLiteDB.swift in Sources */,
+				86C3B2E724ABA43200DE07E8 /* IParcelModel.swift in Sources */,
 				86057DD723C243D900E0B55C /* SQLiteDatabaseRepository.swift in Sources */,
 				86057DD523C241A600E0B55C /* IDatabaseRepository.swift in Sources */,
+				86C3B2E524ABA3E600DE07E8 /* IParcelBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

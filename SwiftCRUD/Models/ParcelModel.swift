@@ -59,7 +59,7 @@ enum ParcelType: Int, CaseIterable, LosslessStringConvertible{
     case ClosedMail = 1, PostCard, ParcelPost, Package, MoneyTransfer
 }
 
-struct ParcelModel {
+struct ParcelModel: ParcelModelProtocol {
     var idParcel: Int
     var typeOfParcel: Int
     var weight: Int

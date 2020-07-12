@@ -7,4 +7,9 @@ target 'SwiftCRUD' do
 
   # Pods for SwiftCRUD
 pod "OpenCV" 
+pod 'Firebase/Core', '6.1.0'
+pod 'Firebase/Auth', '6.1.0'
+pod 'Firebase/Firestore', '6.1.0'
+pod 'Firebase/Storage', '6.1.0'
+pod 'Firebase/Functions', '6.1.0'
 end

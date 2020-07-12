@@ -77,5 +77,14 @@ struct ParcelModel: ParcelModelProtocol {
         self.cost = cost
         self.percelStatus = ParcelStatus(rawValue: parcelStatus)!
     }
+    init(data: [String: Any]) {
+        self.idParcel = data["idParcel"] as? Int ?? 1
+        self.typeOfParcel = data["typeOfParcel"] as? Int ?? 1
+        self.weight = data["data"] as? Int ?? 100
+        self.recipient = data["recipient"] as? Int ?? 100
+        self.droneModel = data["droneModel"] as? Int ?? 1
+        self.cost = data["cost"] as? Int ?? 100
+        self.percelStatus = ParcelStatus(rawValue: data["parcelStatus"] as? Int ?? 1)!
+    }
     
 }

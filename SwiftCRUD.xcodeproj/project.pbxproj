@@ -17,6 +17,7 @@
 		865A948823B76740008E2F8C /* CloudDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865A948223B7673F008E2F8C /* CloudDB.swift */; };
 		865A948923B76740008E2F8C /* SQLiteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865A948323B7673F008E2F8C /* SQLiteBase.swift */; };
 		865A948A23B76740008E2F8C /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865A948423B7673F008E2F8C /* SQLiteDB.swift */; };
+		865D303C24B9BA760079B58D /* FirebaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D303B24B9BA760079B58D /* FirebaseRepository.swift */; };
 		86BB581223C26BAD00E1FF6A /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 86BB581123C26BAD00E1FF6A /* data.db */; };
 		86BB581423C26D7900E1FF6A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BB581323C26D7900E1FF6A /* CustomTableViewCell.swift */; };
 		86C3B2E524ABA3E600DE07E8 /* IParcelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C3B2E424ABA3E600DE07E8 /* IParcelBuilder.swift */; };
@@ -46,6 +47,7 @@
 		865A948323B7673F008E2F8C /* SQLiteBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteBase.swift; sourceTree = SOURCE_ROOT; };
 		865A948423B7673F008E2F8C /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = SOURCE_ROOT; };
 		865A948523B7673F008E2F8C /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		865D303B24B9BA760079B58D /* FirebaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRepository.swift; sourceTree = "<group>"; };
 		86BB581123C26BAD00E1FF6A /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
 		86BB581323C26D7900E1FF6A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		86C3B2E424ABA3E600DE07E8 /* IParcelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IParcelBuilder.swift; sourceTree = "<group>"; };
@@ -98,6 +100,9 @@
 		86057DCF23C23A8400E0B55C /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				86C7C74B2448ECAB00D87CDD /* PrefixHeader.pch */,
+				86C7C7492448EC9100D87CDD /* OpenCVWrapper.mm */,
+				86C7C7472448EC8000D87CDD /* OpenCVWrapper.h */,
 				86C7EA9923B75E3E00EFC512 /* Info.plist */,
 				86C7EA9623B75E3E00EFC512 /* LaunchScreen.storyboard */,
 				86C7EA9423B75E3E00EFC512 /* Assets.xcassets */,
@@ -144,6 +149,7 @@
 				8622173324A76BDC00D1DF8F /* FactoryDatabaseAccess.swift */,
 				86C3B2E424ABA3E600DE07E8 /* IParcelBuilder.swift */,
 				86C3B2E824ABA77C00DE07E8 /* ParcelBuilder.swift */,
+				865D303B24B9BA760079B58D /* FirebaseRepository.swift */,
 			);
 			path = DatabaseRepository;
 			sourceTree = "<group>";
@@ -164,9 +170,6 @@
 		86C7EA7F23B75E3600EFC512 = {
 			isa = PBXGroup;
 			children = (
-				86C7C74B2448ECAB00D87CDD /* PrefixHeader.pch */,
-				86C7C7492448EC9100D87CDD /* OpenCVWrapper.mm */,
-				86C7C7472448EC8000D87CDD /* OpenCVWrapper.h */,
 				86C7EA8A23B75E3700EFC512 /* SwiftCRUD */,
 				86C7EA8923B75E3700EFC512 /* Products */,
 				86C7C7482448EC9100D87CDD /* SwiftCRUD-Bridging-Header.h */,
@@ -206,6 +209,7 @@
 				86C7EA8423B75E3700EFC512 /* Sources */,
 				86C7EA8523B75E3700EFC512 /* Frameworks */,
 				86C7EA8623B75E3700EFC512 /* Resources */,
+				B4CE03EAEF4D81A5E637355F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -287,6 +291,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B4CE03EAEF4D81A5E637355F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftCRUD/Pods-SwiftCRUD-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftCRUD/Pods-SwiftCRUD-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftCRUD/Pods-SwiftCRUD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -296,6 +317,7 @@
 			files = (
 				86592070244088FB00AC0B1B /* AddNewPackageViewController.swift in Sources */,
 				86C7EA9023B75E3700EFC512 /* ViewController.swift in Sources */,
+				865D303C24B9BA760079B58D /* FirebaseRepository.swift in Sources */,
 				86BB581423C26D7900E1FF6A /* CustomTableViewCell.swift in Sources */,
 				865A948723B76740008E2F8C /* SQLTable.swift in Sources */,
 				86C3B2E924ABA77C00DE07E8 /* ParcelBuilder.swift in Sources */,
